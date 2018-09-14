@@ -272,6 +272,7 @@ class Breeze_Admin {
         if(empty($advanced)) $advanced = array();
         $default_advanced = array(
             'breeze-exclude-urls' => array(),
+            'breeze-exclude-pw-items' => '1',
             'breeze-group-css' => '0',
             'breeze-group-js' => '0',
             'breeze-exclude-css' => array(),

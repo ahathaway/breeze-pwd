@@ -6,6 +6,16 @@
 <table cellspacing="15">
     <tr>
         <td>
+            <label for="automatically-exclude-pw-items" class="breeze_tool_tip"><?php _e('Automatically Exclude Password Protected Items', 'breeze'); ?></label>
+        </td>
+        <td>
+            <input type="checkbox" name="exclude-pw-items" id="exclude-pw-items"
+                   value="1" <?php checked($advanced['breeze-exclude-pw-items'],'1')?>/>
+            <label class="breeze_tool_tip" for="exclude-pw-items"><?php _e('Exclude password protected items automatically','breeze')?></label>
+        </td>
+    </tr>
+    <tr>
+        <td>
             <label for="exclude-urls" class="breeze_tool_tip"><?php _e('Never Cache these URLs', 'breeze'); ?></label>
         </td>
         <td>

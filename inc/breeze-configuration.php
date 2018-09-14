@@ -123,6 +123,7 @@ class Breeze_Configuration{
 
                 $advanced = array(
                     'breeze-exclude-urls' => $exclude_urls,
+                    'breeze-exclude-pw-items' => (isset($_POST['exclude-pw-items']) ? '1' : '0'),
                     'breeze-group-css' => (isset($_POST['group-css']) ? '1' : '0'),
                     'breeze-group-js' => (isset($_POST['group-js']) ? '1' : '0'),
                     'breeze-exclude-css' => $exclude_css,
