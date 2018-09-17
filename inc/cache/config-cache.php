@@ -69,6 +69,9 @@ class Breeze_ConfigCache {
 		$pwdpages               = array();
 		if ($config['breeze-exclude-pw-items'] === '1') {
 			$pwdpages = Breeze_ConfigCache::get_password_protected_items();
+
+			//@todo delete this later
+			$testitem=array();
 		}
 
 		$storage = array(
@@ -217,7 +220,7 @@ class Breeze_ConfigCache {
 		return $ret;
 	}
 
-	public function get_password_protected_items() {
+	public static function get_password_protected_items() {
 
 		$pwditems = array();
 		$posts    = get_posts( array(
